@@ -177,21 +177,21 @@ section {
 }
 /* Arabic (Classical Naskh) */
 [lang="ar"] {
-  font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif !important;
   font-size: 1.1rem;
   line-height: 2;
 }
 
 /* Urdu (Nastaliq) */
 [lang="ur"] {
-  font-family: 'Noto Nastaliq Urdu', serif;
+  font-family: 'Noto Nastaliq Urdu', serif !important;
   font-size: 1.2rem;
   line-height: 2.4;
 }
 
 /* Farsi (Persian Naskh) */
 [lang="fa"] {
-  font-family: 'Vazirmatn', 'Noto Naskh Arabic', serif;
+  font-family: 'Vazirmatn', 'Noto Naskh Arabic', serif !important;
   font-size: 1.1rem;
   line-height: 2;
 }
