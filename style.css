@@ -83,6 +83,10 @@ section {
    THUMBNAILS
    =========================== */
 
+.content img.thumbnail {
+    display: block;
+    margin: 0 auto;
+}
 .thumbnail {
     width: 180px;
     height: auto;
