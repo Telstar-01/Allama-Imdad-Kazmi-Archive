@@ -1,5 +1,5 @@
 /* ===========================
-   GLOBAL LAYOUT & TYPOGRAPHY
+   1. GLOBAL TYPOGRAPHY & LAYOUT
    =========================== */
 
 html, body {
@@ -7,48 +7,33 @@ html, body {
     padding: 0;
     background: #fafafa;
     color: #222;
+}
+
+/* English default font */
+html:lang(en) body {
     font-family: Georgia, serif;
     line-height: 1.7;
 }
 
-/* RTL languages */
+/* RTL languages inherit their own font rules */
 [dir="rtl"] {
     font-family: inherit !important;
 }
 
-/* ===========================
-   HERO HEADER (Option 1)
-   =========================== */
-
-.hero {
+h1, h2, h3 {
+    font-family: Georgia, serif;
     text-align: center;
-    padding: 60px 20px 40px 20px;
+    margin-top: 0;
 }
 
-.hero.small {
-    padding: 40px 20px 30px 20px;
-}
-
-.hero h1 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.hero h2 {
-    margin: 10px 0 0 0;
-    font-size: 22px;
-    font-weight: normal;
-}
-
-.tagline {
-    margin-top: 8px;
-    font-size: 20px;
-    opacity: 0.85;
+.content {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 /* ===========================
-   NAVIGATION BAR
+   2. NAVIGATION BAR
    =========================== */
 
 .navbar {
@@ -69,32 +54,7 @@ html, body {
 }
 
 /* ===========================
-   PAGE CONTENT
-   =========================== */
-
-section {
-    padding: 20px 0 40px 0;
-}
-
-.content {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* ===========================
-   FOOTER
-   =========================== */
-
-footer {
-    text-align: center;
-    padding: 25px 0;
-    opacity: 0.8;
-    font-size: 15px;
-}
-
-/* ===========================
-   LANGUAGE FONTS
+   LANGUAGE-SPECIFIC FONTS
    =========================== */
 
 [lang="ur"] {
@@ -113,12 +73,15 @@ footer {
 }
 
 /* ===========================
-   MOBILE
+   MOBILE RESPONSIVENESS
    =========================== */
 
 @media (max-width: 600px) {
-    .hero h1 { font-size: 26px; }
-    .hero h2 { font-size: 18px; }
-    .tagline { font-size: 18px; }
-    .navbar a { margin: 0 10px; font-size: 15px; }
+    .navbar a {
+        margin: 0 10px;
+        font-size: 15px;
+    }
+    .content {
+        padding: 0 15px;
+    }
 }
