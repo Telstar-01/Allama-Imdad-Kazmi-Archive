@@ -114,6 +114,7 @@ footer {
     line-height: 2.4;
     direction: rtl;
 }
+
 /* Urdu tagline size adjustment */
 .tagline[lang="ur"] {
     font-size: 1.35rem;
