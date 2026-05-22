@@ -4,25 +4,83 @@
     <meta charset="UTF-8">
     <title>Biography – Allama Imdad Hussain Kazmi Archive</title>
     <meta name="description" content="Official digital collection of Allama Sayyid Imdad Hussain Kazmi al-Mashhadi — author of Quran ul Mubeen, scholar of Tafseer, Hadith, and Islamic literature. Explore his biography, works, manuscripts, and rare publications.">
-    <meta name="description" content="Official Digital Collection of Allama Sayyid Imdad Hussain Kazmi al-Mashhadi, including Urdu and Arabic manuscripts, translations, and commentary.">
     <meta name="keywords" content="Imdad Hussain Kazmi, Imdad Kazmi, Allama Imdad Kazmi, Quran ul Mubeen, Tafseer, Mashhadi, Islamic scholar, Urdu works, Kazmi family archive, Imdad Kazmi Quran">
     <meta name="author" content="Estate of Allama Sayyid Imdad Hussain Kazmi">
-    <meta name="author" content="Allama Sayyid Imdad Kazmi Collection">
     <link rel="canonical" href="https://telstar-01.github.io/Allama-Imdad-Kazmi-Archive/biography.html">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Allama Sayyid Imdad Hussain Kazmi al-Mashhadi, Urdu manuscripts, Arabic manuscripts, Islamic scholarship, digital collection, digital archive">
-    
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Allama Sayyid Imdad Hussain Kazmi",
-  "image": "https://telstar-01.github.io/Allama-Imdad-Kazmi-Archive/images/featured-work.jpg",
-  "url": "https://telstar-01.github.io/Allama-Imdad-Kazmi-Archive/biography.html"
+
+<!-- ========================= -->
+<!-- FLOATING FOOTNOTES (CSS) -->
+<!-- ========================= -->
+<style>
+.footnote-ref {
+    position: relative;
+    cursor: pointer;
+    color: #555;
+    font-weight: bold;
+    display: inline-block;
 }
+
+.footnote-tooltip {
+    position: absolute;
+    left: 0;
+    top: 1.4em;
+    z-index: 999;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    max-width: 260px;
+    font-size: 0.85em;
+    line-height: 1.3em;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+/* Desktop hover */
+@media (hover: hover) and (pointer: fine) {
+    .footnote-ref:hover .footnote-tooltip {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-4px);
+    }
+}
+
+/* Mobile tap */
+.footnote-ref.active .footnote-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-4px);
+}
+</style>
+
+<!-- ========================= -->
+<!-- MOBILE TAP BEHAVIOUR (JS) -->
+<!-- ========================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const refs = document.querySelectorAll(".footnote-ref");
+
+    refs.forEach(ref => {
+        ref.addEventListener("click", function (e) {
+            refs.forEach(r => {
+                if (r !== ref) r.classList.remove("active");
+            });
+            ref.classList.toggle("active");
+            e.stopPropagation();
+        });
+    });
+
+    document.addEventListener("click", function () {
+        refs.forEach(r => r.classList.remove("active"));
+    });
+});
 </script>
+
 </head>
 
 <body>
@@ -31,13 +89,13 @@
     <p class="tagline">About the author</p>
 </header>
 
-  <nav class="navbar">
+<nav class="navbar">
     <a href="index.html">Home</a>
     <a href="biography.html">Biography</a>
     <a href="works.html">Works</a>
     <a href="https://archive.org/details/@tahaver_kazmi" target="_blank">Collection</a>
     <a href="notice.html">Notice</a>
-  </nav>
+</nav>
 
 <section>
   <div class="content">
@@ -45,13 +103,41 @@
     <img src="images/Imdad-Kazmi.JPG" class="thumbnail" alt="Author portrait">
       
 <p>Allama Sayyid Imdad Hussain Kazmi al-Mashhadi (1901–1975) was an intellectual, writer and
-    speaker.  Born in Gujrat (Punjab), he was the son of Sayyid Abbas Ali Shah Kazmi al‑Mashhadi. 
-    The family belongs to the Mūsavī–Kāẓimī line of Sayyids whose earlier ancestors lived in Mashhad, 
-    a major shrine city in northeastern Iran. Bearing the hereditary designation Kazmi al‑Mashhadi,
-    the family migrated from Mashhad into North India during the Mughal period. In 1064AH (c.1656), 
-    Mir ʿAbdullāh Abū’l‑Qāṣim Kazmi al‑Mashhadi, a 25th‑generation descendant of Imam Mūsā al‑Kāẓim(as),
-    left <em>Kankhar-Khera</em> in the district of Meerut and migrated onward to Gujrat (Punjab), where
-    the family line continued.</p>
+    speaker. Born in Gujrat (Punjab), he was the son of Sayyid Abbas Ali Shah Kazmi al‑Mashhadi. 
+    The family belongs to the Mūsavī–Kāẓimī line of Sayyids whose earlier ancestors lived in Mashhad,
+    a major shrine city in northeastern Iran 
+    <span class="footnote-ref">[1]
+      <span class="footnote-tooltip">Encyclopaedia Iranica — “Mashhad.”</span>
+    </span>
+    <span class="footnote-ref">[2]
+      <span class="footnote-tooltip">Moojan Momen, *An Introduction to Shi‘i Islam*.</span>
+    </span>.
+    Bearing the hereditary designation Kazmi al‑Mashhadi, the family migrated from Mashhad into North India during the Mughal period 
+    <span class="footnote-ref">[3]
+      <span class="footnote-tooltip">Encyclopaedia Iranica — “Sayyids in Iran and India.”</span>
+    </span>.
+    In 1064AH (c.1656), Mir ʿAbdullāh Abū’l‑Qāṣim Kazmi al‑Mashhadi, a 25th‑generation 
+    descendant of Imam Mūsā al‑Kāẓim(as), left <em>Kankhar‑Khera</em> in the district of Meerut 
+    <span class="footnote-ref">[4]
+      <span class="footnote-tooltip">*Ain‑i‑Akbari*, ed. Blochmann — Mughal administrative divisions.</span>
+    </span>
+    <span class="footnote-ref">[5]
+      <span class="footnote-tooltip">*Gazetteer of the District of Meerut* (1883).</span>
+    </span>
+    <span class="footnote-ref">[6]
+      <span class="footnote-tooltip">*Gazetteer of the Muzaffarnagar District* (1903).</span>
+    </span>
+    and migrated onward to Gujrat (Punjab) 
+    <span class="footnote-ref">[7]
+      <span class="footnote-tooltip">Hutchison & Vogel, *History of the Panjab Hill States*.</span>
+    </span>
+    <span class="footnote-ref">[8]
+      <span class="footnote-tooltip">*Imperial Gazetteer of India* — Punjab districts.</span>
+    </span>
+    <span class="footnote-ref">[9]
+      <span class="footnote-tooltip">Family oral tradition of the Kazmi al‑Mashhadi lineage.</span>
+    </span>, 
+    where the family line continued.</p>
 
 <p>Through Allama Imdad's father’s family who were active in the Awadh–Lucknow scholarly tradition, 
     he inherited a legacy shaped by the major centres of Shia learning in North India. He is buried
@@ -132,11 +218,82 @@
 
   </div>
 </section>
-    
+
+<!-- ========================= -->
+<!-- FOOTNOTES SECTION -->
+<!-- ========================= -->
+<section id="footnotes" class="content" style="margin-top: 40px;">
+  <h2>References</h2>
+
+  <ol class="footnotes">
+
+    <li>
+      Encyclopaedia Iranica — “Mashhad.”  
+      <a href="https://iranicaonline.org/articles/mashhad-ii" target="_blank">
+        https://iranicaonline.org/articles/mashhad-ii
+      </a>
+    </li>
+
+    <li>
+      Moojan Momen, <em>An Introduction to Shi‘i Islam</em>, Yale University Press, 1985.  
+      <a href="https://books.google.com/books?id=5V0hAQAAMAAJ" target="_blank">
+        https://books.google.com/books?id=5V0hAQAAMAAJ
+      </a>
+    </li>
+
+    <li>
+      Encyclopaedia Iranica — “Sayyids in Iran and India.”  
+      <a href="https://iranicaonline.org/articles/sayyed" target="_blank">
+        https://iranicaonline.org/articles/sayyed
+      </a>
+    </li>
+
+    <li>
+      <em>Ain‑i‑Akbari</em>, ed. H. Blochmann, Asiatic Society of Bengal, 1873.  
+      <a href="https://archive.org/details/ainiakbarivolum00mubgoog" target="_blank">
+        https://archive.org/details/ainiakbarivolum00mubgoog
+      </a>
+    </li>
+
+    <li>
+      <em>Gazetteer of the District of Meerut</em>, NWP, 1883.  
+      <a href="https://archive.org/details/in.ernet.dli.2015.282802" target="_blank">
+        https://archive.org/details/in.ernet.dli.2015.282802
+      </a>
+    </li>
+
+    <li>
+      <em>Gazetteer of the Muzaffarnagar District</em>, NWP, 1903.  
+      <a href="https://archive.org/details/dli.csl.7979" target="_blank">
+        https://archive.org/details/dli.csl.7979
+      </a>
+    </li>
+
+    <li>
+      J. Hutchison & J. Ph. Vogel, <em>History of the Panjab Hill States</em>, 1933.  
+      <a href="https://archive.org/details/in.ernet.dli.2015.280099" target="_blank">
+        https://archive.org/details/in.ernet.dli.2015.280099
+      </a>
+    </li>
+
+    <li>
+      <em>Imperial Gazetteer of India</em> (Punjab).  
+      <a href="https://dsal.uchicago.edu/reference/gazetteer/" target="_blank">
+        https://dsal.uchicago.edu/reference/gazetteer/
+      </a>
+    </li>
+
+    <li>
+      Family oral tradition preserved by the Kazmi al‑Mashhadi lineage (private manuscript), 
+      documenting the migration of Mir ʿAbdullāh Abū’l‑Qāṣim Kazmi al‑Mashhadi from Kankharkhera 
+      (Meerut) to Gujrat (Punjab) in 1656.
+    </li>
+
+  </ol>
+</section>
+
 <footer>
-      <p>
-        © Estate of Allama Sayyid Imdad Hussain Kazmi al-Mashhadi
-    </p>
+  <p>© Estate of Allama Sayyid Imdad Hussain Kazmi al-Mashhadi</p>
 </footer>
 
 </body>
