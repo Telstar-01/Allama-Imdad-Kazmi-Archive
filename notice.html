@@ -30,7 +30,26 @@
 
 <h2 style="text-align: center;">Use and Sharing</h2>
 
-<p>To share material from this archive on social‑media platforms, share this 
+<p>To share this archive on social‑media platforms, <span class="copy-link" data-url="https://telstar-01.github.io/Allama-Imdad-Kazmi-Archive/">
+    copy this link
+  </span>.
+</p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const el = document.querySelector('.copy-link');
+    el.style.cursor = 'pointer';
+
+    el.addEventListener('click', async () => {
+      const url = el.getAttribute('data-url');
+      await navigator.clipboard.writeText(url);
+      el.style.textDecoration = 'underline';
+      setTimeout(() => el.style.textDecoration = 'none', 500);
+    });
+  });
+</script>
+  
+  share this 
   <a href="https://telstar-01.github.io/Allama-Imdad-Kazmi-Archive/index.html">link</a>.  
   Unauthorised sharing of this archive’s digital materials on social‑media platforms,
   websites, or messaging services is prohibited.  Unauthorised reproduction or 
