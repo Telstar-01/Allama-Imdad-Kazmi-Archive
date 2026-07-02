@@ -35,20 +35,6 @@
     copy this link</span>.
 </p>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const el = document.querySelector('.copy-link');
-    el.style.cursor = 'pointer';
-
-    el.addEventListener('click', async () => {
-      const url = el.getAttribute('data-url');
-      await navigator.clipboard.writeText(url);
-      el.style.textDecoration = 'underline';
-      setTimeout(() => el.style.textDecoration = 'none', 500);
-    });
-  });
-</script>
-  
   share this 
   <a href="https://telstar-01.github.io/Allama-Imdad-Kazmi-Archive/index.html">link</a>.  
   Unauthorised sharing of this archive’s digital materials on social‑media platforms,
@@ -131,6 +117,20 @@ material as original.</p>
         © Estate of Allama Sayyid Imdad Hussain Kazmi al-Mashhadi
     </p>
 </footer>
-  
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const el = document.querySelector('.copy-link');
+    el.style.cursor = 'pointer';
+
+    el.addEventListener('click', async () => {
+      const url = el.getAttribute('data-url');
+      await navigator.clipboard.writeText(url);
+      el.style.textDecoration = 'underline';
+      setTimeout(() => el.style.textDecoration = 'none', 500);
+    });
+  });
+</script>    
+    
 </body>
 </html>
